@@ -1,0 +1,61 @@
+{
+  "name": "timely-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.13.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "pretest": "eslint --ignore-path .gitignore .",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "Node.js",
+    "Rest",
+    "api",
+    "for",
+    "learning",
+    "prettier"
+  ],
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "@signalwire/node": "^2.4.0",
+    "@vonage/server-sdk": "^2.10.10",
+    "aws-sdk": "^2.868.0",
+    "aws-serverless-express": "^3.4.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "config": "^3.3.6",
+    "connect-multiparty": "^2.2.0",
+    "cron": "^1.8.2",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment-timezone": "^0.5.34",
+    "mongoose": "^5.2.14",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "node-cron": "^3.0.0",
+    "passport": "^0.4.1",
+    "serverless-http": "^2.7.0",
+    "stripe": "^8.186.1",
+    "swagger-ui-express": "^4.1.6",
+    "twilio": "^3.73.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
+    "eslint": "^7.20.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "nodemon": "^2.0.12",
+    "serverless-offline": "^7.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

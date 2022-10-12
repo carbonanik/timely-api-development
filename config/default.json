@@ -1,0 +1,20 @@
+{
+  "jwtPrivateKey": "unsecureKey",
+  "bcryptSalt": "$2b$10$oPd2gJERglqNiWXf3sYwID",
+  "otp_expiry_in_mins": 15,
+  "resend_expiry_in_mins": 15,
+  "reset_password_otp_expiry_in_mins": 600,
+  "requiresAuth": true,
+  "stripe_key_public": "pk_test_gDZPU7BFK6R18B8nacYJYvmp00VuJAJQAf",
+  "stripe_key_secret": "sk_test_51GKoaTHY2Z6sqqFMyx2IKygE7yaOZNJURB5BSVYyJzj3WgRMExKlFX95wvJ9p7Yng6eCx0T9NG1tWO0rttbrkFE000cga2t9uT",
+  "send_grid": "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",
+  "twillio_SID": "AC66b6cef083fabdf1843ad6195a8736b8",
+  "twillio_auth": "7282158ad75d5507b5a016aa8dcfcce3",
+  "tiwllio_number": "+15878740801",
+  "relay_project_key": "be2b703b-c954-4250-8a59-41a7ba9abb9d",
+  "phone": "+18554448752",
+  "relay_token": "PTdcc7a7c5480799d9a9ecd46f9b17189c62854add1c9ed8ea",
+  "db_user": "timely",
+  "db_password": "SUZKBVdr6EdXPKSq",
+  "db_host": "cluster0.3v6qfkx.mongodb.net/timely?retryWrites=true&w=majority"
+}

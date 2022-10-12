@@ -1,0 +1,818 @@
+{
+	"info": {
+		"_postman_id": "e19110c7-7a5a-40cc-ac8e-f17570236216",
+		"name": "timely-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "announcements",
+			"item": [
+				{
+					"name": "ADD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2Mzg3MjIwMDB9.wp8pdSg4djA3jdEYSMIhmrcMkh6qcffP0eD_Mnk4vyI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"timely\",\n    \"title\": \"Hello\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/announcement/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"announcement",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/announcement/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"announcement",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/announcement/614c551c37e7511ee86b6c22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"announcement",
+								"614c551c37e7511ee86b6c22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "ADD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThjMThlZWRhNmIxYzYyMDU2YTYwMTAiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTYzNjU3MTM3NH0.sxL2KU9NAcV0huH3DnKTIdkHk7ZOzcGZ_s9qYnjnlIw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"departmentId\": \"618c5d79d7216e7b34814221\",\n    \"position\": \"Senior Developer\",\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "ADD",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY3NDUyNTh9.fucZ_y2C6L_ZNx-uk7fADifXP0NgA_gJtl7D1D_WrcI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"IT handling of the company\",\n    \"name\": \"Information Technology\",\n    \"companyId\": \"MCD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/department/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"department",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThkODgyMGI2MjcxZGIyNWU0YmM4NTEiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTYzNjczMTc4NX0.Mzw021zIvnNq5OYP-4MKem3VmV6SBR0DpCTSUUSqXBE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/department/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"department",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThkNjAwMTAwYmU2MzlkOTIxZGY4YjMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY2NTYzMTF9.P5PfkTsC6DjAVrY1cRgx4q4z5WSw8S4pVgumvddn5z4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyCode\": \"LS\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/department/618da639271f50bfd589cf33",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"department",
+								"618da639271f50bfd589cf33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"rishabh\",\n    \"name\": \"ncsnjsncks\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/department/614c6026c2f18124d596a5bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"department",
+								"614c6026c2f18124d596a5bd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"addressOne\": \"304-1881\",\n    \"addressTwo\": \"Brunswick St\",\n    \"city\": \"Halifax\",\n    \"email\": \"rishabh+44@ladderstack.com\",\n    \"firstName\": \"Pat\",\n    \"lastName\": \"JJJJJ\",\n    \"password\": \"Balvikas1234@\",\n    \"phone\": \"5143495115\",\n    \"phoneType\": \"Mobile\",\n    \"state\": \"NS\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRjODA2NWU5MGUzZDMzNWIxNDEyNTMiLCJyb2xlIjoidXNlciIsImlhdCI6MTYzMjQwMzU1N30.ZYaUEOCGFUU3ymnj3wo14ji4lMRqnwCeSp0WpRY5tW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"addressOne\": \"cjnjsnsjc\",\n    \"addressTwo\": \"cjnjsnsjc\",\n    \"city\": \"cjnjsnsjc\",\n    \"firstName\": \"cjnjsnsjc\",\n    \"lastName\": \"cjnjsnsjc\",\n    \"phone\": \"cjnjsnsjc\",\n    \"phoneType\": \"cjnjsnsjc\",\n    \"state\": \"cjnjsnsjc\",\n    \"timeZoneId\": \"cjnjsnsjc\",\n    \"userName\": \"cjnjsnsjc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invite User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY3NDQzODV9.faLqAFtQ43VYHodvZTl3XL8gThQP61cyddgm82APtS4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companyCode\": \"MCD\",\n    \"firstName\": \"Rishabh\",\n    \"lastName\": \"agg\",\n    \"email\": \"rishabh.aggarwal@dal.ca\",\n    \"position\": \"XYZZZ\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/invite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"invite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55Q29kZSI6Ik1DRCIsImZpcnN0TmFtZSI6IlJpc2hhYmgiLCJsYXN0TmFtZSI6ImFnZyIsImVtYWlsIjoicmlzaGFiaC5hZ2dhcndhbEBkYWwuY2EiLCJwb3NpdGlvbiI6IlhZWlpaIiwiaWF0IjoxNjM2NzQ0NzY1fQ.4N4NWH7h_qqQE7fihviTgsbtcKIz3RBR1Y6h4kC4ftU\",\n   \"addressOne\": \"304-1881\",\n    \"addressTwo\": \"Brunswick St\",\n    \"city\": \"Halifax\",\n    \"email\": \"patjlouis@gmail.com\",\n    \"firstName\": \"Pat\",\n    \"lastName\": \"JJJJJ\",\n    \"password\": \"Balvikas1234@\",\n    \"phone\": \"5143495115\",\n    \"phoneType\": \"Mobile\",\n    \"state\": \"NS\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register-employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register-employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Make Manager",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY3NDQzODV9.faLqAFtQ43VYHodvZTl3XL8gThQP61cyddgm82APtS4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employeeId\": \"618ebef50b7f96ef09b410a5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/promote-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"promote-user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"patjlouis@gmail.com\",\n    \"password\": \"Test1234@\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/verify/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWFkMDFjYWNhYzgyYTcwMmMxODE3ODAiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2Mzg3MjgxMzh9.eO_5DjSQ1SyTLNYfb7VFKdN0HLU2VhCvgurRpJJJOrY",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"verify",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWFkMDFjYWNhYzgyYTcwMmMxODE3ODAiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2Mzg3MjgxMzh9.eO_5DjSQ1SyTLNYfb7VFKdN0HLU2VhCvgurRpJJJOrY"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Password Rest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"patjlouis@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/request-reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"request-reset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"618ebbef362940ee0f4ff3be\",\n    \"password\": \"Test1234@\",\n    \"token\": \"$2b$10$oPd2gJERglqNiWXf3sYwI.QP4f4UjeaRPQUXaHzm9ngaSqzqK.A6.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/reset-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY3NDQzODV9.faLqAFtQ43VYHodvZTl3XL8gThQP61cyddgm82APtS4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Macdonalds\",\n    \"code\": \"MCD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/company/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"company",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Billing",
+			"item": [
+				{
+					"name": "Add Card",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY4Mzc0ODF9.PDx2U2Kx0ARBJFZL5MMrPBy1CMl9AHvTTOefh8cL_oA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cardNumber\": \"4242424242424242\",\n    \"cardExpMonth\": \"06\",\n    \"cardExpYear\": \"2025\",\n    \"cardCVC\": \"123\",\n    \"country\": \"US\",\n    \"postalCode\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/billing/add-card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"billing",
+								"add-card"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Schedule",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzczMzk0MjR9.Z_cWObsHhbGots339bjDGeQycleOHe87YQdiZC-yDXc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"schedule\": {\n        \"monday\": {\n            \"startTime\": \"1234567890\",\n            \"endTime\": \"1234567890\",\n            \"timezone\": \"1234567890\",\n            \"sendReminder\": false\n        },\n        \n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/schedule/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"schedule",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzczMzk0MjR9.Z_cWObsHhbGots339bjDGeQycleOHe87YQdiZC-yDXc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"schedule\": {\n        \"wednesday\": {\n            \"startTime\": \"1234567890\",\n            \"endTime\": \"1234567890\",\n            \"timezone\": \"1234567890\",\n            \"sendReminder\": false\n        }\n        \n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/schedule/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"schedule",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MThlYmJlZjM2Mjk0MGVlMGY0ZmYzYmUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzczMzk0MjR9.Z_cWObsHhbGots339bjDGeQycleOHe87YQdiZC-yDXc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/schedule/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"schedule",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWFkMDFjYWNhYzgyYTcwMmMxODE3ODAiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2Mzg3MjgxMzh9.eO_5DjSQ1SyTLNYfb7VFKdN0HLU2VhCvgurRpJJJOrY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reminderSetting\": 34\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/setting/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"setting",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
